@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import { Heading } from './components/Heading';
 import './App.css';
+import Main from './components/main';
+import './components/mainstyle.css';
+// import Card from './components/Cards/card';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+  //destrucutirng the array
+  // const[pokemon, setPokemon] = useState(["bulbasaur", "charmander"])
+  //the two above names are default
+  // setpokemon will set the values
+
+    return (
+      <div className='pokemonFinder'>
+        <Heading />
+        <div>
+          <Main/>
+          {/* <Card/> */}
+        </div>
+      </div>
+    );
+  }
+
+export default App
