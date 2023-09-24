@@ -2,7 +2,7 @@ import { Heading } from './components/Heading';
 import './App.css';
 import Main from './components/main';
 import './components/mainstyle.css';
-// import Card from './components/Cards/card';
+
 
 function App() {
 
@@ -16,7 +16,6 @@ function App() {
         <Heading />
         <div>
           <Main/>
-          {/* <Card/> */}
         </div>
       </div>
     );

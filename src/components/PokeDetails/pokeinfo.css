@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(92, 92, 92, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,32 +12,31 @@
   }
   
   .overlay-content {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: var( --color );
+    padding: 30px;
+    border-radius: 3rem;
     max-width: 80%;
     overflow: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* background: rgba(47, 47, 47, 1);  */
+    will-change:  transform;
+    transition: .3s all;
   }
   
   .overlay-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
   
-  .overlay-header h1 {
-    font-size: 24px;
-    margin: 0;
-  }
+
   
   .close-button {
-    background: #ff6b6b;
-    border: none;
+    background: #f64a4a;
+    border:white;
     padding: 10px 20px;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: auto;
   }
   
   .close-button:hover {
@@ -45,33 +44,101 @@
   }
   
   .overlay-body {
-    margin-top: 20px;
+    margin-top: 10px;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
   }
   
   .overlay-body img {
+    height: 400px;
+    width: 400px;
     max-width: 100%;
-    border: 1px solid #ccc;
+    display: block;
+    margin:10px 30px;
+    
+  }
+
+  .overlay-body h1 {
+    font-size: 30px;
+    display: block;
+    margin: 0;
+    font-weight: 1000;
   }
   
-  .abilities {
-    margin-top: 20px;
-  }
-  
-  .abilities .group {
+  .info {
+    margin-top: 30px;
     margin-bottom: 10px;
   }
+
+  .info table{
+    border-collapse: collapse; 
+    width: 60%; 
+    margin: 0 auto;
+  }
   
-  .abilities .group h2 {
+  .info th, .info td {
+    padding: 10px; /* Add padding for space between columns */
+    text-align: left; /* Align text to the left within cells */
+  }
+
+  .info h2 {
     margin: 0;
     font-size: 18px;
   }
   
-  .basestat {
-    margin-top: 20px;
-  }
-  
-  .basestat h3 {
+  .info h3 {
     margin: 0;
     font-size: 16px;
   }
   
+
+
+  @media screen and ( min-width: 1024px )
+  {
+      .overlay-content:hover
+      {
+          transform: translateY( -4px );
+          box-shadow: 0 0 15px 5px var( --color );
+      }
+  }
+  
+
+  /*
+    Pokemon type colors
+*/
+.type-normal { --color: #C2C2A1; }
+
+.type-flying { --color: #BAB0D5; }
+
+.type-ghost { --color: #735797; }
+
+.type-dark { --color: #333; }
+
+.type-steel { --color: #CCCCDE; }
+
+.type-ground { --color: #B1736C; }
+
+.type-poison { --color: #7C538C; }
+
+.type-grass { --color: #48D0B0; }
+
+.type-fire { --color: #FB6C6C; }
+
+.type-electric { --color: #FFD86F; }
+
+.type-fairy { --color: #f469a9; }
+
+.type-bug { --color: #C3CE75; }
+
+.type-fighting { --color: #d6b591; }
+
+.type-water { --color: #609FB5; }
+
+.type-psychic { --color: #9B7FA6; }
+
+.type-ice { --color: #7FCCEC; }
+
+.type-rock { --color: #a6aab6; }
+
+.type-dragon { --color: #F9BE00; }
