@@ -15,7 +15,7 @@ const Overlay = ({ pokemon, onClose }) =>{
                 </div>
                 <div className="overlay-body">
                     
-                    <img src={pokemon.sprites.other.dream_world.front_default}></img>
+                    <img src={pokemon.sprites.other.dream_world.front_default} alt="pokemon"></img>
                     <h1>{pokemon.name}</h1>
                     <div className="info">
                         <table>
@@ -55,19 +55,9 @@ const Overlay = ({ pokemon, onClose }) =>{
                                 </td>
                             </tr>
                         </table>
-                        {/* <div className="group">
-                            <h2>
-                                {pokemon.abilities[0].ability.name}
-                                {pokemon.abilities[1] && `, ${pokemon.abilities[1].ability.name}`}
-                            </h2>
-                        </div> */}
                     </div>  
 
-                    {/* <div className="basestat">
-                        <h3>Height   {pokemon.height}</h3>
-                        <h3>Weight   {pokemon.weight}</h3>
-                        <h3>Species  {pokemon.species.name}</h3>
-                    </div>  */}
+
                 </div>
             </div>
         </div>
