@@ -6,12 +6,16 @@
   }
   
   .pokelogo-container {
-    margin-right: 5px; /* Adjust spacing between the logo and the Lottie animation */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
   }
   
   .pokelogo {
-    max-width: 90;
+    /* max-width: 90; */
     height: auto; 
+    width: 70%;
+
   }
 
   .lottie-animation {
@@ -21,5 +25,5 @@
   
 
   .lottie-animation .lottie-container {
-    max-width: 90%; 
+    max-width: 80%; 
   }

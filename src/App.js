@@ -1,4 +1,4 @@
-import { Heading } from './components/Heading';
+import {Heading} from './components/Heading';
 import './App.css';
 import Main from './components/main';
 import './components/mainstyle.css';
